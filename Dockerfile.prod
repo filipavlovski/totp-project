@@ -20,6 +20,7 @@ EXPOSE 9000
 WORKDIR /var/www/ib-proekt.com
 
 COPY composer.json composer.json
+COPY composer.lock composer.lock
 
 RUN composer install --no-dev --no-interaction --optimize-autoloader
 
